@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя галерея</title>
+</head>
+<body>
+    <h1>Моя фотогалерея</h1>
+    <div class="gallery">
+    <div class="gallery-item">
+      <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419296.jpg" width="300" alt="Татуювання на руці" />
+      <div class="caption">Фото 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419298.jpg" width="300" alt="Вогнепальний пістолет" />
+      <div class="caption">Фото 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419301.jpg" width="300" alt=" Тир у ВНУ" />
+      <div class="caption">Фото 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419303.jpg" width="300" alt="Татуювання на тілі" />
+      <div class="caption">Фото 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419305.jpg" width="300" alt="Дві дівчини на мості" />
+      <div class="caption">Фото 5</div>
+    </div>
+  </div>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.caption {
+  text-align: center;
+  color: #666;
+}
+
+
+  </style>
+</body>
+
+
