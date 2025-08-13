@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            max-width: 800px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .gallery-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .caption {
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Моя фотогалерея</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419296.jpg" alt="Татуювання на руці" />
+            <div class="caption">Фото 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419298.jpg" alt="Вогнепальний пістолет" />
+            <div class="caption">Фото 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419301.jpg" alt="Тир у ВНУ" />
+            <div class="caption">Фото 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="C:\Users\ПК\Desktop\task4\images\5253848273188419303.jpg" alt="Татуювання на тілі" />
+            <div class="caption">Фото 4</div>
+        </div>
+    </div>
+</body>
+</html>
