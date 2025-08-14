@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивна карта світу</title>
+</head>
+<body>
+    <h1>Інтерактивна карта світу</h1>
+    
+    <div class="map-container">
+        <p>Натисніть на позначені області карті, щоб отримати більше інформації:</p>
+        
+        <!-- Image with map -->
+        <img src="https://st4.depositphotos.com/2465573/19956/v/1600/depositphotos_199569868-stock-illustration-six-continents-political-world-map.jpg" 
+             alt="Політична карта світу з позначеними континентами" 
+             usemap="#worldmap">
+             
+        <!-- Image map definition -->
+        <map name="worldmap">
+            <!-- USA - rectangle shape -->
+            <area shape="rect" 
+                  coords="90,120,250,220" 
+                  href="https://uk.wikipedia.org/wiki/США" 
+                  alt="Сполучені Штати Америки"
+                  title="Дізнатися більше про США">
+                  
+            <!-- Europe - circle shape -->
+            <area shape="circle" 
+                  coords="400,150,70" 
+                  href="https://uk.wikipedia.org/wiki/Європа" 
+                  alt="Європа"
+                  title="Дізнатися більше про Європу">
+        </map>
+    </div>
+    
+    <div class="instructions">
+        <h3>Як це працює:</h3>
+        <p>Це демонстрація використання HTML тегів <map> та <area>:</p>
+        <ul>
+            <li>Тег <map> визначає клікабельні зони на зображенні</li>
+            <li>Тег <area> визначає форму області (прямокутник, коло або багатокутник)</li>
+            <li>Атрибут <em>usemap</em> пов'язує зображення з картою</li>
+            <li>Текст в атрибуті <em>alt</em> показується, якщо зображення не завантажиться</li>
+        </ul>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .map-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .instructions {
+            margin-top: 30px;
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+        }
+        
+        /* Highlight areas on hover */
+        area:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    </style>
+</body>
+</html>
+

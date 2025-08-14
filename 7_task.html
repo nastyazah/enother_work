@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо моїх робіт</title>
+</head>
+<body>
+    <header>
+        <h1>Портфоліо моїх робіт</h1>
+    </header>
+    
+    <div class="container">
+        <ol>
+            <li>
+                <a href="1_task.html">
+                    <span>Завдання 1: Моя перша сторінка</span>
+                    Базова HTML-сторінка привітання з основним заголовком та коротким текстом.
+                </a>
+            </li>
+            <li>
+                <a href="2_task.html">
+                    <span>Завдання 2: Сторінка "Про мене"</span>
+                    Особиста сторінка з інформацією про себе, мої інтереси та хобі.
+                </a>
+            </li>
+            <li>
+                <a href="3_task.html">
+                    <span>Завдання 3: Улюблені навчальні ресурси</span>
+                    Мої улюблені джерела інформації для навчання.
+                </a>
+            </li>
+            <li>
+                <a href="d.html">
+                    <span>Завдання 4: Форма зворотнього зв'язку</span>
+                    Інтерактивна форма для надсилання повідомлень з різними типами полів вводу.
+                </a>
+            </li>
+            <li>
+                <a href="5_task.html">
+                    <span>Завдання 5: Зображення-посилання </span>
+                    Сайт Вікіпедія на який ти приходиш через зображення-посилання.
+                </a>
+            </li>
+            <li>
+                <a href="6_task.html">
+                    <span>Завдання 6: Сторінка з посиланнями на контакти</span>
+                    Сторінка через яку можеш позвонити чи написати на пошту.
+                </a>
+            </li>
+        </ol>
+    </div>
+    
+    <footer>
+        <p>© 2023 Моє портфоліо. Всі завдання виконані в рамках навчання.</p>
+    </footer>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ff7e5f;
+            --text-color: #333;
+            --light-text: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        ol {
+            counter-reset: item;
+            padding-left: 0;
+        }
+        
+        li {
+            display: flex;
+            margin-bottom: 1rem;
+            counter-increment: item;
+        }
+        
+        li::before {
+            content: counter(item);
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        a {
+            display: block;
+            padding: 1rem;
+            background-color: white;
+            text-decoration: none;
+            color: var(--text-color);
+            border-radius: 5px;
+            flex-grow: 1;
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: var(--accent-color);
+            color: var(--light-text);
+        }
+        
+        a span {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактна інформація</title>
+</head>
+<body>
+    <h1>Контактна інформація</h1>
+    
+    <div class="contact-links">
+        <a href="mailto:contact@example.com" class="email-link">Написати нам на пошту</a>
+        <a href="tel:+380991234567" class="phone-link">Зателефонувати нам</a>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+        .email-link {
+            background-color: #2ecc71;
+        }
+        .email-link:hover {
+            background-color: #27ae60;
+        }
+        .phone-link {
+            background-color: #e74c3c;
+        }
+        .phone-link:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</body>
+</html>
+
