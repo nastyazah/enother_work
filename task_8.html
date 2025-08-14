@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Інтерактивна карта України</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .map-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .city-marker {
+            position: absolute;
+            background: yellow;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid red;
+            text-decoration: none;
+            transform: translate(-50%, -50%);
+        }
+        
+        .city-marker:hover {
+            background: red;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Інтерактивна карта України</h1>
-    <img src="https://travel-guide.in.ua/assets/map_of_ukraine.png" usemap="#ukraine-map" alt="Карта України" width="800" height="600">
-
-    <map name="ukraine-map">
-        <area shape="rect" coords="320,180,400,240" href="https://uk.wikipedia.org/wiki/Київ" alt="Київ" title="Київ">
-        <area shape="circle" coords="150,350,30" href="https://uk.wikipedia.org/wiki/Луцьк" alt="Луцьк" title="Луцьк">
-        <area shape="circle" coords="500,350,30" href="https://uk.wikipedia.org/wiki/Черкаси" alt="Черкаси" title="Черкаси">
-    </map>
+    
+    <div class="map-container">
+        <img src="https://travel-guide.in.ua/assets/map_of_ukraine.png" 
+             alt="Карта України" 
+             width="800" 
+             height="600">
+        
+        <a href="https://uk.wikipedia.org/wiki/Київ" 
+           class="city-marker" 
+           style="top: 40%; left: 52%;" 
+           target="_blank">
+           Київ
+        </a>
+        
+        <a href="https://uk.wikipedia.org/wiki/Луцьк" 
+           class="city-marker" 
+           style="top: 45%; left: 25%;" 
+           target="_blank">
+           Луцьк
+        </a>
+        
+        <a href="https://uk.wikipedia.org/wiki/Черкаси" 
+           class="city-marker" 
+           style="top: 60%; left: 52%;" 
+           target="_blank">
+           Черкаси
+        </a>
+    </div>
+    
+    <p>Натисніть на жовті мітки для перегляду інформації про міста.</p>
 </body>
 </html>
 
